@@ -1,0 +1,6 @@
+unzip rag_cpp_example.zip -d rag_cpp
+cd rag_cpp
+cmake -B build -S .
+cmake --build build -j
+./build/rag_demo ingest /abs/path/to/pdfs
+./build/rag_demo chat <session_id> "What does section 3 say?"
